@@ -22,4 +22,10 @@ public abstract class Duck {
         System.out.println("all ducks can swim");
     }
 
+    public abstract void display();
+
+    public void updateDuck(FlyBehavior flyBehaviorr, QuackBehavior quackBehaviorr){
+        this.flyBehavior = flyBehaviorr;
+        this.quackBehavior = quackBehaviorr;
+    }
 }
